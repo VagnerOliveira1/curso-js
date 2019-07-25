@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo Dom</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+
+
+    <script>
+        var linkElement = document.createElement('a')
+        linkElement.setAttribute('href','http://mentebinaria.com.br')
+        linkElement.setAttribute('title','Site da MenteBinaria')
+        var textElement = document.createTextNode('Acesso ao MenteBinaria')
+        linkElement.appendChild(textElement)
+
+        var containerElement = document.querySelector('div#app')
+        containerElement.appendChild(linkElement)
+    </script>
+    
+</body>
+</html>
